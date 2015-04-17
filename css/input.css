@@ -48,12 +48,14 @@ input:focus {
 /***** Basic *****/
 
 .basic {
+	border-radius: 0;
 	border: 1px solid;
 }
 
 /***** Border transparent *****/
 
 .basic-transparent {
+	border-radius: 0;
 	border: 1px solid transparent;
 }
 
