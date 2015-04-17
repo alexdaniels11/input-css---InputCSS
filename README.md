@@ -5,4 +5,4 @@ An assemblage of CSS3 driven styling and focus state effects to be applied to fo
 
 ## Download
 
-- [Download Zip](https://iamalexdaniels.com/css/InputCSS-Master.zip)
+- [Download Zip](http://iamalexdaniels.com/css/InputCSS-Master.zip)
