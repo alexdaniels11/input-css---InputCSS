@@ -50,6 +50,10 @@ a {
 	color: #22A7F0;
 }
 
+.created-by {
+	text-align: center;
+}
+
 p.link {
 	margin-top: 20px;
 }
