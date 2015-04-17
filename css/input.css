@@ -16,6 +16,10 @@ input {
 	padding: 8px 10px;
 	width: 100%;
 	margin: 10px 0;
+	-webkit-transition-duration: 0.25s;
+	-moz-transition: .25s;
+	-o-transition: .25s;
+ 	transition-duration: 0.25s;
 }
 
 input:focus {
@@ -23,6 +27,18 @@ input:focus {
 	border-color: #22A7F0; 
 }
 
+.basic[disabled], .basic-transparent[disabled] {
+    cursor: not-allowed;
+    background: #ddd;
+    -webkit-transition-duration: 0.25s;
+	-moz-transition: .25s;
+	-o-transition: .25s;
+ 	transition-duration: 0.25s;
+}
+
+.basic[disabled]:hover, .basic-transparent[disabled]:hover {
+	background: #eee;
+}
 
 
 /*==================== Input Default styles ====================*/
