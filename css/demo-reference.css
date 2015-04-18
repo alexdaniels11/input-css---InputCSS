@@ -114,7 +114,27 @@ footer{
 }
 
 .side-menu {
-	margin-top: 100px;
+	margin-top: 70px;
+	position: absolute;
+	top: 450px;
+	right: 20px;
+}
+
+.side-menu a {
+	text-decoration: none;
+}
+
+.side-menu a p {
+	border-left: 1px solid #fff;
+	padding: 10px 0 10px 10px;
+	margin:0;
+	border-bottom: 1px solid #eee;
+}
+
+.side-menu a p:hover {
+	border-left: 1px solid #22A7F0;
+	text-decoration: none;
+	background-color: #eee;
 }
 
 @media (min-width: 500px) {
