@@ -113,6 +113,10 @@ footer{
 	margin: 0;
 }
 
+.side-menu {
+	margin-top: 100px;
+}
+
 @media (min-width: 500px) {
 	h1 {
 		font-size: 5em;
@@ -122,6 +126,12 @@ footer{
 @media (min-width: 767px) {
 	h1 {
 		font-size: 6em;
+	}
+}
+
+@media (max-width: 767px) {
+	.side-menu {
+		display: none;
 	}
 }
 
