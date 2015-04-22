@@ -65,7 +65,7 @@ textarea:focus {
 
 .basic {
 	border-radius: 0;
-	border: 1px solid;
+	border: 1px solid #000;
 }
 
 /***** Border transparent *****/
