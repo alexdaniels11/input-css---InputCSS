@@ -37,6 +37,17 @@
 
 			<div class="input-samplecode col-xs-12">
 				<div class="col-md-6">
+					<input type="text" placeholder="Basic Gray Input" class="basic-gray">
+				</div>
+				<div class="col-md-6">
+					<div class="highlight">
+						<pre><code>&lt;input type="text" class="<kbd>basic-gray</kbd>"&gt;</code></pre>
+					</div>
+				</div>
+			</div>
+
+			<div class="input-samplecode col-xs-12">
+				<div class="col-md-6">
 					<input type="text" placeholder="Basic Transparent Input" class="basic-transparent">
 				</div>
 				<div class="col-md-6">
@@ -401,6 +412,50 @@
 					</div>
 				</div>
 
+				<div class="input-samplecode col-xs-12">
+					<div class="col-md-6">
+						<input type="text" placeholder="Border Left Gray" class="basic-transparent border-gray-left">
+					</div>
+					<div class="col-md-6">
+						<div class="highlight">
+							<pre><code>&lt;input type="text" class="<kbd>basic-transparent</kbd> <kbd>border-gray-left</kbd>"&gt;</code></pre>
+						</div>
+					</div>
+				</div>
+
+				<div class="input-samplecode col-xs-12">
+					<div class="col-md-6">
+						<input type="text" placeholder="Border Right Gray" class="basic-transparent border-gray-right">
+					</div>
+					<div class="col-md-6">
+						<div class="highlight">
+							<pre><code>&lt;input type="text" class="<kbd>basic-transparent</kbd> <kbd>border-gray-right</kbd>"&gt;</code></pre>
+						</div>
+					</div>
+				</div>
+
+				<div class="input-samplecode col-xs-12">
+					<div class="col-md-6">
+						<input type="text" placeholder="Border Bottom Gray" class="basic-transparent border-gray-btm">
+					</div>
+					<div class="col-md-6">
+						<div class="highlight">
+							<pre><code>&lt;input type="text" class="<kbd>basic-transparent</kbd> <kbd>border-gray-btm</kbd>"&gt;</code></pre>
+						</div>
+					</div>
+				</div>
+
+				<div class="input-samplecode col-xs-12">
+					<div class="col-md-6">
+						<input type="text" placeholder="Border Top Gray" class="basic-transparent border-gray-top">
+					</div>
+					<div class="col-md-6">
+						<div class="highlight">
+							<pre><code>&lt;input type="text" class="<kbd>basic-transparent</kbd> <kbd>border-gray-top</kbd>"&gt;</code></pre>
+						</div>
+					</div>
+				</div>
+
 				<div class="input-samplecode col-xs-offset-1 col-xs-10">
 					<h3 class="col-xs-12">Input Border Style Usage:</h3>
 					<div class="col-md-6">
@@ -612,6 +667,22 @@
 			<div class="col-xs-12"><em class="col-sm-offset-1 col-sm-10 col-xs-12">With these styles you can apply any of the previously mentioned input classes to the &lt;form&gt; simply by adding the word <kbd>form-</kbd> before any of the inputCSS classes (Example: &lt;form class="<kbd>form-basic</kbd> <kbd>form-fcs-box-shadow</kbd>"&gt;&lt;/form&gt;). This should make styling a lot easier if all your input fields need to look the same. And, if you still would like to create an individual input field or two different than the others, you still can by adding the regular inputCSS classes to the &lt;input&gt;.</em></div>
 
 			<section>
+				<div class="input-samplecode col-xs-12">
+					<p class="text-center">The class <kbd>stack</kbd> allows the creator of the form to stack multiple input fields top to bottom.</p>
+					<div class="col-md-6">
+						<form class="form-basic stack">
+							<input type="text" placeholder="Top Input">
+							<input type="text" placeholder="Bottom Input">
+						</form>
+					</div>
+					<div class="col-md-6">
+						<div class="highlight">
+							<pre><code>&lt;form class="<kbd>form-basic</kbd> <kbd>stack</kbd>"&gt;
+							&lt;input type="text"&gt;<br>&lt;input type="text"&gt;
+							&lt;/form&gt;</code></pre>
+						</div>
+					</div>
+				</div>
 
 				<div class="input-samplecode col-xs-offset-1 col-xs-10">
 					<h3 class="col-xs-12">Form Style Usage:</h3>
@@ -639,18 +710,30 @@
 
 				<div class="input-samplecode col-xs-offset-1 col-xs-10">
 					<div class="col-md-6">
-						<form class="">
-							<label>Login:</label>
-							<input type="text" placeholder="Username" class="border-top">
-							<input type="text" placeholder="Password">
+						<form class="form-basic-transparent form-border-left-sm form-border-right-sm">
+							<label>Sign up:</label>
+							<input type="text" placeholder="First Name" class="border-top-sm border-btm-sm radius-all">
+							<input type="text" placeholder="Last Name" class="border-top-sm border-btm-sm radius-all">
+							<input type="email" placeholder="Email" class="border-top-sm border-btm-sm radius-all">
+							<div class="stack">
+								<input type="text" placeholder="Username" class="border-top-sm radius-top border-gray-btm">
+								<input type="text" placeholder="Password" class="border-gray-btm border-gray-top">
+								<input type="text" placeholder="Repeat Password" class="border-btm-sm radius-btm border-gray-top">
+							</div>
 						</form>
 					</div>
 					<div class="col-md-6">
 						<div class="highlight">
-								<pre><code>&lt;form class="<kbd>form-basic</kbd> <kbd>form-fcs-heart-beat-border</kbd>"&gt;
-								&lt;label&gt;First Name&lt;/label&gt;<br>&lt;input type="text" placeholder="First Name"&gt;
-								&lt;label&gt;Last Name&lt;/label&gt;<br>&lt;input type="text" placeholder="Last Name"&gt;
-								&lt;label&gt;Email&lt;/label&gt;<br>&lt;input type="text" placeholder="Email"&gt;
+								<pre><code>&lt;form class="<kbd>form-basic-transparent</kbd> <kbd>form-border-left-sm</kbd> <kbd>form-border-right-sm</kbd>"&gt;
+								&lt;label&gt;Sign Up&lt;/label&gt;
+								&lt;input type="text" placeholder="First Name" class="<kbd>border-top-sm</kbd> <kbd>border-btm-sm</kbd> <kbd>radius-all</kbd>"&gt;
+								&lt;input type="text" placeholder="Last Name" class="<kbd>border-top-sm</kbd> <kbd>border-btm-sm</kbd> <kbd>radius-all</kbd>"&gt;
+								&lt;input type="email" placeholder="Email" class="<kbd>border-top-sm</kbd> <kbd>border-btm-sm</kbd> <kbd>radius-all</kbd>"&gt;
+								&lt;div class="<kbd>stack</kbd>"&gt;
+									&lt;input type="text" placeholder="Username" class="<kbd>border-top-sm</kbd> <kbd>radius-top</kbd> <kbd>border-gray-btm</kbd>"&gt;
+									&lt;input type="text" placeholder="Password" class="<kbd>border-gray-btm</kbd> <kbd>border-gray-top</kbd>"&gt;
+									&lt;input type="text" placeholder="Repeat Password" class="<kbd>border-btm-sm</kbd> <kbd>radius-btm</kbd> <kbd>border-gray-top</kbd>"&gt;
+								&lt;/div&gt;
 								&lt;/form&gt;
 							</code></pre>
 						</div>
@@ -662,6 +745,7 @@
 		
 		<aside class="col-sm-3 sticker side-menu">	
 			<div class="inside">
+				<a href=""><p>Back to Top</p></a>
 				<a href="#basic-styles"><p>Basic Input styles</p></a>
 				<a href="#radius-styles"><p>Radius Input styles</p></a>
 				<a href="#border-styles"><p>Border Input styles</p></a>

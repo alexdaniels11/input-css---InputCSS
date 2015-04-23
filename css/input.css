@@ -75,7 +75,7 @@ form textarea:focus {
 	border-color: #22A7F0; 
 }
 
-.basic[disabled], .basic-transparent[disabled] {
+input.basic[disabled], input.basic-transparent[disabled] {
     cursor: not-allowed;
     background: #ddd;
     -webkit-transition-duration: 0.25s;
@@ -93,7 +93,7 @@ form textarea:focus {
  	transition-duration: 0.25s;
 }
 
-.basic[disabled]:hover, .basic-transparent[disabled]:hover {
+input.basic[disabled]:hover, input.basic-transparent[disabled]:hover {
 	background: #eee;
 }
 
@@ -107,9 +107,21 @@ form textarea:focus {
 
 
 
+/***** Form Styles *****/
+
+.stack {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.stack input {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 /***** Basic *****/
 
-.basic {
+input.basic {
 	border-radius: 0;
 	border: 1px solid #000;
 }
@@ -119,9 +131,41 @@ form textarea:focus {
 	border: 1px solid #000;
 }
 
+input.basic:focus {
+	outline-style: none;
+	border: 1px solid #22A7F0;
+}
+
+.form-basic input:focus {
+	outline-style: none;
+	border: 1px solid #22A7F0;
+}
+
+/***** Basic gray *****/
+
+input.basic-gray {
+	border-radius: 0;
+	border: 1px solid #ccc;
+}
+
+.form-basic-gray input {
+	border-radius: 0;
+	border: 1px solid #ccc;
+}
+
+input.basic-gray:focus {
+	outline-style: none;
+	border: 1px solid #22A7F0;
+}
+
+.form-basic-gray input:focus {
+	outline-style: none;
+	border: 1px solid #22A7F0;
+}
+
 /***** Border transparent *****/
 
-.basic-transparent {
+input.basic-transparent {
 	border-radius: 0;
 	border: 1px solid transparent;
 }
@@ -131,7 +175,7 @@ form textarea:focus {
 	border: 1px solid transparent;
 }
 
-.basic-transparent:focus {
+input.basic-transparent:focus {
 	outline-style: none;
 	border: 1px solid #22A7F0;
 }
@@ -149,7 +193,7 @@ form textarea:focus {
 
 /***** Border Radius Bottom Left *****/
 
-.radius-btm-left {
+input.radius-btm-left {
 	border-bottom-left-radius: 10px;
 }
 
@@ -159,7 +203,7 @@ form textarea:focus {
 
 /***** Border Radius Bottom Right *****/
 
-.radius-btm-right {
+input.radius-btm-right {
 	border-bottom-right-radius: 10px;
 }
 
@@ -169,7 +213,7 @@ form textarea:focus {
 
 /***** Border Radius Top Right *****/
 
-.radius-top-right {
+input.radius-top-right {
 	border-top-right-radius: 10px;
 }
 
@@ -179,7 +223,7 @@ form textarea:focus {
 
 /***** Border Radius Top Left *****/
 
-.radius-top-left {
+input.radius-top-left {
 	border-top-left-radius: 10px;
 }
 
@@ -189,7 +233,7 @@ form textarea:focus {
 
 /***** Border Radius Top *****/
 
-.radius-top {
+input.radius-top {
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px
 }
@@ -201,7 +245,7 @@ form textarea:focus {
 
 /***** Border Radius Bottom *****/
 
-.radius-btm {
+input.radius-btm {
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px
 }
@@ -213,7 +257,7 @@ form textarea:focus {
 
 /***** Border Radius Left *****/
 
-.radius-left {
+input.radius-left {
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px
 }
@@ -225,7 +269,7 @@ form textarea:focus {
 
 /***** Border Radius Right *****/
 
-.radius-right {
+input.radius-right {
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px
 }
@@ -237,7 +281,7 @@ form textarea:focus {
 
 /***** Border Radius Bottom Left Top Right *****/
 
-.radius-btm-left-top-right {
+input.radius-btm-left-top-right {
 	border-bottom-left-radius: 10px;
 	border-top-right-radius: 10px
 }
@@ -249,7 +293,7 @@ form textarea:focus {
 
 /***** Border Radius Bottom Right Top Left *****/
 
-.radius-btm-right-top-left {
+input.radius-btm-right-top-left {
 	border-bottom-right-radius: 10px;
 	border-top-left-radius: 10px
 }
@@ -261,7 +305,7 @@ form textarea:focus {
 
 /***** Border Radius All *****/
 
-.radius-all {
+input.radius-all {
 	border-radius: 10px;
 }
 
@@ -275,7 +319,7 @@ form textarea:focus {
 
 /***** Border Left Small *****/
 
-.border-left-sm {
+input.border-left-sm {
 	border-left: 1px solid #000;
 }
 
@@ -285,7 +329,7 @@ form textarea:focus {
 
 /***** Border Left *****/
 
-.border-left {
+input.border-left {
 	border-left: 2px solid #000;
 }
 
@@ -295,7 +339,7 @@ form textarea:focus {
 
 /***** Border Left Medium *****/
 
-.border-left-md {
+input.border-left-md {
 	border-left: 3px solid #000;
 }
 
@@ -305,7 +349,7 @@ form textarea:focus {
 
 /***** Border Left Large *****/
 
-.border-left-lg {
+input.border-left-lg {
 	border-left: 4px solid #000;
 }
 
@@ -315,7 +359,7 @@ form textarea:focus {
 
 /***** Border Right Small *****/
 
-.border-right-sm {
+input.border-right-sm {
 	border-right: 1px solid #000;
 }
 
@@ -325,7 +369,7 @@ form textarea:focus {
 
 /***** Border Right *****/
 
-.border-right {
+input.border-right {
 	border-right: 2px solid #000;
 }
 
@@ -335,7 +379,7 @@ form textarea:focus {
 
 /***** Border Right Medium *****/
 
-.border-right-md {
+input.border-right-md {
 	border-right: 3px solid #000;
 }
 
@@ -345,7 +389,7 @@ form textarea:focus {
 
 /***** Border Right Large *****/
 
-.border-right-lg {
+input.border-right-lg {
 	border-right: 4px solid #000;
 }
 
@@ -355,7 +399,7 @@ form textarea:focus {
 
 /***** Border Bottom Small *****/
 
-.border-btm-sm {
+input.border-btm-sm {
 	border-bottom: 1px solid #000;
 }
 
@@ -365,7 +409,7 @@ form textarea:focus {
 
 /***** Border Bottom *****/
 
-.border-btm {
+input.border-btm {
 	border-bottom: 2px solid #000;
 }
 
@@ -375,7 +419,7 @@ form textarea:focus {
 
 /***** Border Bottom Medium *****/
 
-.border-btm-md {
+input.border-btm-md {
 	border-bottom: 3px solid #000;
 }
 
@@ -385,7 +429,7 @@ form textarea:focus {
 
 /***** Border Bottom Large *****/
 
-.border-btm-lg {
+input.border-btm-lg {
 	border-bottom: 4px solid #000;
 }
 
@@ -395,7 +439,7 @@ form textarea:focus {
 
 /***** Border Top Small *****/
 
-.border-top-sm {
+input.border-top-sm {
 	border-top: 1px solid #000;
 }
 
@@ -405,7 +449,7 @@ form textarea:focus {
 
 /***** Border Top *****/
 
-.border-top {
+input.border-top {
 	border-top: 2px solid #000;
 }
 
@@ -415,7 +459,7 @@ form textarea:focus {
 
 /***** Border Top Medium *****/
 
-.border-top-md {
+input.border-top-md {
 	border-top: 3px solid #000;
 }
 
@@ -425,12 +469,52 @@ form textarea:focus {
 
 /***** Border Top Large *****/
 
-.border-top-lg {
+input.border-top-lg {
 	border-top: 4px solid #000;
 }
 
 .form-border-top-lg input {
 	border-top: 4px solid #000;
+}
+
+/***** Border Left Gray *****/
+
+input.border-gray-left {
+	border-left-color: #ccc;
+}
+
+.form-border-gray-left input {
+	border-left-color: #ccc;
+}
+
+/***** Border Right Gray *****/
+
+input.border-gray-right {
+	border-right-color: #ccc;
+}
+
+.form-border-gray-right input {
+	border-right-color: #ccc;
+}
+
+/***** Border Bottom Gray *****/
+
+input.border-gray-btm {
+	border-bottom-color: #ccc;
+}
+
+.form-border-gray-btm input {
+	border-bottom-color: #ccc;
+}
+
+/***** Border Top Gray *****/
+
+input.border-gray-top {
+	border-top-color: #ccc;
+}
+
+.form-border-gray-top input {
+	border-top-color: #ccc;
 }
 
 
@@ -440,7 +524,7 @@ form textarea:focus {
 
 /***** Box Shadow on Focus *****/
 
-.fcs-box-shadow {
+input.fcs-box-shadow {
 	box-shadow: 0 0 0 0 rgba( 0, 0, 0, .5);
 	-webkit-transition-duration: 0.25s;
 	-moz-transition: .25s;
@@ -456,7 +540,7 @@ form textarea:focus {
  	transition-duration: 0.25s;
 }
 
-.fcs-box-shadow:focus {
+input.fcs-box-shadow:focus {
 	box-shadow: 0 0 10px 0 rgba( 0, 0, 0, .5);
 }
 
@@ -466,7 +550,7 @@ form textarea:focus {
 
 /***** Inset Box Shadow on Focus *****/
 
-.fcs-inset-box-shadow {
+input.fcs-inset-box-shadow {
 	box-shadow: inset 0 0 0 0 rgba( 0, 0, 0, .5);
 	-webkit-transition-duration: 0.25s;
 	-moz-transition: .25s;
@@ -482,7 +566,7 @@ form textarea:focus {
  	transition-duration: 0.25s;
 }
 
-.fcs-inset-box-shadow:focus {
+input.fcs-inset-box-shadow:focus {
 	box-shadow: inset 0 0 10px 0 rgba( 0, 0, 0, .5);
 }
 
@@ -492,7 +576,7 @@ form textarea:focus {
 
 /***** Inset Rectangle on Focus *****/
 
-.fcs-in-rect {
+input.fcs-in-rect {
 	box-shadow: inset 0 0 0 0 rgba( 0, 0, 0, 1);
 	-webkit-transition-duration: 0.25s;
 	-moz-transition: .25s;
@@ -508,7 +592,7 @@ form textarea:focus {
  	transition-duration: 0.25s;
 }
 
-.fcs-in-rect:focus {
+input.fcs-in-rect:focus {
 	color: #fff;
 	box-shadow: inset 0 0 0 20px rgba( 0, 0, 0, 1);
 }
@@ -520,7 +604,7 @@ form textarea:focus {
 
 /***** Inset Rectangle on Focus *****/
 
-.fcs-out-rect {
+input.fcs-out-rect {
 	box-shadow: inset 0 0 0 20px rgba( 255, 255, 255, 1);
 	color: #fff;
 	border: 1px solid #000;
@@ -540,7 +624,7 @@ form textarea:focus {
  	transition-duration: 0.25s;
 }
 
-.fcs-out-rect:focus {
+input.fcs-out-rect:focus {
 	box-shadow: inset 0 0 0 0 rgba( 255, 255, 255, 1);
 	background-color: #000;
 }
@@ -552,7 +636,7 @@ form textarea:focus {
 
 /***** Scale X Axis Larger on Focus *****/
 
-.fcs-x-scale-lg {
+input.fcs-x-scale-lg {
 	-webkit-transition-duration: 0.25s;
 	-moz-transition: .25s;
 	-o-transition: .25s;
@@ -566,7 +650,7 @@ form textarea:focus {
  	transition-duration: 0.25s;
 }
 
-.fcs-x-scale-lg:focus {
+input.fcs-x-scale-lg:focus {
 	-webkit-transform: scaleX(1.1);
 	-moz-transform:    scaleX(1.1);
 	-ms-transform:     scaleX(1.1);
@@ -584,21 +668,21 @@ form textarea:focus {
 
 /***** Scale X Axis Smaller on Focus *****/
 
-.fcs-x-scale-sm {
+input.fcs-x-scale-sm {
 	-webkit-transition-duration: 0.25s;
 	-moz-transition: .25s;
 	-o-transition: .25s;
  	transition-duration: 0.25s;
 }
 
-.fcs-x-scale-sm input {
+input.fcs-x-scale-sm input {
 	-webkit-transition-duration: 0.25s;
 	-moz-transition: .25s;
 	-o-transition: .25s;
  	transition-duration: 0.25s;
 }
 
-.fcs-x-scale-sm:focus {
+input.fcs-x-scale-sm:focus {
 	-webkit-transform: scaleX(.9);
 	-moz-transform:    scaleX(.9);
 	-ms-transform:     scaleX(.9);
@@ -606,7 +690,7 @@ form textarea:focus {
 	transform:         scaleX(.9);
 }
 
-.fcs-x-scale-sm input:focus {
+input.fcs-x-scale-sm input:focus {
 	-webkit-transform: scaleX(.9);
 	-moz-transform:    scaleX(.9);
 	-ms-transform:     scaleX(.9);
@@ -616,21 +700,21 @@ form textarea:focus {
 
 /***** Scale Y Axis Larger on Focus *****/
 
-.fcs-y-scale-lg {
+input.fcs-y-scale-lg {
 	-webkit-transition-duration: 0.25s;
 	-moz-transition: .25s;
 	-o-transition: .25s;
  	transition-duration: 0.25s;
 }
 
-.fcs-y-scale-lg input {
+input.fcs-y-scale-lg input {
 	-webkit-transition-duration: 0.25s;
 	-moz-transition: .25s;
 	-o-transition: .25s;
  	transition-duration: 0.25s;
 }
 
-.fcs-y-scale-lg:focus {
+input.fcs-y-scale-lg:focus {
 	-webkit-transform: scaleY(1.1);
 	-moz-transform:    scaleY(1.1);
 	-ms-transform:     scaleY(1.1);
@@ -648,7 +732,7 @@ form textarea:focus {
 
 /***** Scale Y Axis Smaller on Focus *****/
 
-.fcs-y-scale-sm {
+input.fcs-y-scale-sm {
 	-webkit-transition-duration: 0.25s;
 	-moz-transition: .25s;
 	-o-transition: .25s;
@@ -662,7 +746,7 @@ form textarea:focus {
  	transition-duration: 0.25s;
 }
 
-.fcs-y-scale-sm:focus {
+input.fcs-y-scale-sm:focus {
 	-webkit-transform: scaleY(.9);
 	-moz-transform:    scaleY(.9);
 	-ms-transform:     scaleY(.9);
@@ -680,7 +764,7 @@ form textarea:focus {
 
 /***** Scale Larger on Focus *****/
 
-.fcs-scale-lg {
+input.fcs-scale-lg {
 	-webkit-transition-duration: 0.25s;
 	-moz-transition: .25s;
 	-o-transition: .25s;
@@ -694,7 +778,7 @@ form textarea:focus {
  	transition-duration: 0.25s;
 }
 
-.fcs-scale-lg:focus {
+input.fcs-scale-lg:focus {
 	-webkit-transform: scale(1.1);
 	-moz-transform:    scale(1.1);
 	-ms-transform:     scale(1.1);
@@ -712,7 +796,7 @@ form textarea:focus {
 
 /***** Scale Smaller on Focus *****/
 
-.fcs-scale-sm {
+input.fcs-scale-sm {
 	-webkit-transition-duration: 0.25s;
 	-moz-transition: .25s;
 	-o-transition: .25s;
@@ -726,7 +810,7 @@ form textarea:focus {
  	transition-duration: 0.25s;
 }
 
-.fcs-scale-sm:focus {
+input.fcs-scale-sm:focus {
 	-webkit-transform: scale(.9);
 	-moz-transform:    scale(.9);
 	-ms-transform:     scale(.9);
@@ -744,7 +828,7 @@ form textarea:focus {
 
 /***** Animate Border Rainbow Loop on Focus *****/
 
-.fcs-rainbow-border:focus {
+input.fcs-rainbow-border:focus {
 	-webkit-animation: rainbow linear 5s infinite; 
     animation: rainbow linear 5s infinite; 
 }
@@ -774,7 +858,7 @@ form textarea:focus {
 
 /***** Animate Background Rainbow Loop on Focus *****/
 
-.fcs-rainbow-bg:focus {
+input.fcs-rainbow-bg:focus {
 	-webkit-animation: rainbow-bg linear 5s infinite; 
     animation: rainbow-bg linear 5s infinite; 
 }
@@ -804,7 +888,7 @@ form textarea:focus {
 
 /***** Animate Border Heart Beat Loop on Focus *****/
 
-.fcs-heart-beat-border:focus {
+input.fcs-heart-beat-border:focus {
 	-webkit-animation: beat linear 1.25s infinite; 
     animation: beat linear 1.25s infinite; 
 }
@@ -828,7 +912,7 @@ form textarea:focus {
 
 /***** Animate Border Heart Beat Loop on Focus *****/
 
-.fcs-heart-beat-bg:focus {
+input.fcs-heart-beat-bg:focus {
 	-webkit-animation: beat-bg linear 1.25s infinite; 
     animation: beat-bg linear 1.25s infinite; 
 }
