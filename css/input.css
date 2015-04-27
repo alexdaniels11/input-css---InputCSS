@@ -75,7 +75,7 @@ form textarea:focus {
 	border-color: #22A7F0; 
 }
 
-input.basic[disabled], input.basic-transparent[disabled] {
+input.basic[disabled], input.basic-gray[disabled], input.basic-transparent[disabled] {
     cursor: not-allowed;
     background: #ddd;
     -webkit-transition-duration: 0.25s;
@@ -84,7 +84,7 @@ input.basic[disabled], input.basic-transparent[disabled] {
  	transition-duration: 0.25s;
 }
 
-.form-basic input[disabled], .form-basic-transparent input[disabled] {
+.form-basic input[disabled], .form-basic-gray input[disabled], .form-basic-transparent input[disabled] {
     cursor: not-allowed;
     background: #ddd;
     -webkit-transition-duration: 0.25s;
@@ -93,12 +93,20 @@ input.basic[disabled], input.basic-transparent[disabled] {
  	transition-duration: 0.25s;
 }
 
-input.basic[disabled]:hover, input.basic-transparent[disabled]:hover {
+input.basic[disabled]:hover, input.basic-gray[disabled]:hover, input.basic-transparent[disabled]:hover {
 	background: #eee;
 }
 
-.form-basic input[disabled]:hover, .form-basic-transparent input[disabled]:hover {
+.form-basic input[disabled]:hover, .form-basic-gray input[disabled]:hover, .form-basic-transparent input[disabled]:hover {
 	background: #eee;
+}
+
+input.basic[required]:focus, input.basic-gray[required]:focus, input.basic-transparent[required]:focus {
+    border: solid 1px #FF0000;
+}
+
+.form-basic input[required]:focus, .form-basic-gray input[required]:focus, .form-basic-transparent input[required]:focus {
+	border: solid 1px #FF0000;
 }
 
 
